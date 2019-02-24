@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Jul  3 17:58:01 2018
-
-@author: Sharmila
-"""
 #1.Import Data
 
 from sklearn.datasets import load_iris
