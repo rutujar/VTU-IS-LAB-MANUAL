@@ -1,0 +1,9 @@
+student{ display: block;border-style:solid;} 
+label{
+ font-weight: bold;
+ color: blue;
+}
+usn,name,college,branch,year,email
+{
+ font-size: 14pt;
+ color: red;
