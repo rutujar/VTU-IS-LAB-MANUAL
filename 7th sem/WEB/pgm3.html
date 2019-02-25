@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Text growing and text shrinking </title>
+<script>
+var wait1=setInterval(textgrow,100);
+var size=10;
+function textgrow()
+{
+if(size<51)
+{
+size=size+1;
+document.getElementById('p1').style.fontSize=(size+'pt');
+document.getElementById('p1').style.color='red';
+document.getElementById('p2').style.visibility="hidden";
+}
+else
+{
+clearInterval(wait1);
+wait1=setInterval(textshrink,100);
+document.getElementById('p1').style.fontSize='1pt';
+document.getElementById('p1').style.visibility="hidden";
+document.getElementById('p2').style.visibility="visible";
+}
+}
+function textshrink()
+{
+if(size>5)
+{
+size=size-1;
+document.getElementById('p2').style.fontSize=(size+"pt");
+document.getElementById('p2').style.color="blue";
+}
+else
+{
+clearInterval(wait1);
+}
+}
+</script>
+</head>
+<body>
+<p id="p1">Text growing</p>
+<p id="p2">Text shrinking</p>
+</body>
+</html>			
