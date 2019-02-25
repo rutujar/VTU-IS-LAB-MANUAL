@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>vowelcount</title>
+<script>
+function vowSearch(st)
+{
+var pos;
+pos=st.search(/[aeiouAEIOU]/);
+if(pos<0)
+alert("vowel not found");
+else
+alert("left most vowel position is "+(pos+1));
+}
+</script>
+</head>
+<body>
+<form>
+<p>ENTER THE TEXT </p>
+<input type="text" id="vtext"/>
+<input type="button" value="click here" onclick="vowSearch(vtext.value);"/>
+</form>
+</body>
+</html>
