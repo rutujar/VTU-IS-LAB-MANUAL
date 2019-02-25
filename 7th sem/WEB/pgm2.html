@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>square and cube</title>
+<script type="text/javascript">
+function square(){
+var n=prompt("enter the number");
+document.write("<table border='3'><tr><th>number</th><th>square</th><th>cube</th></tr>");
+for(i=1;i<=n;i++) {
+document.write("<tr><td>"+i+"</td><td>"+i*i+"</td><td>"+i*i*i+"</td></tr>");
+}
+document.write("</table>");
+}
+</script>
+</head>
+<body>
+<h2>square and cube</h2>
+<form><table border='1'>
+<tr>
+<th>square and cube</th>
+<td><input type="radio" value="rb1" onclick="square()"/></td>
+</tr>
+</table>
+</body>
+</html>
